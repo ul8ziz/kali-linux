@@ -13,7 +13,8 @@ reboot
 _______________________
 apt-get install tilix
 
-
+___________________activate root+++++++
+sudo apt install -y kali-grant-root && sudo dpkg-reconfigure kali-grant-root
 
 ____________  fierwall   -___________  
 apt-get install gufw
